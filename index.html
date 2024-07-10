@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros & Sinopses</title>
+ 
+     <link rel="stylesheet" type="text/css"href="css/stylee.css"> 
+</head>
+<body>
+    <header>
+        <h1>Livros & Sinopses</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="livros.html">Livros</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+   
+         <main>
+            <h4>Bem-vindo à Livros & Sinopses</h4>
+            <div id="typingContainer" class="typing-container"></div>
+          </section>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Livros & Sinopses. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <script>
+        // Texto a ser exibido
+        const text = "Explore alguns dos livros que disponibilizei para você escolhidos por gênero. Espero que encontre algo que goste!";
+        
+        // Função que realiza o efeito de digitação
+        function typeWriter(text, elementId, speed) {
+          let index = 0;
+          const element = document.getElementById(elementId);
+      
+          function type() {
+            if (index < text.length) {
+              element.innerHTML += text.charAt(index);
+              index++;
+              setTimeout(type, speed);
+            }
+          }
+      
+          type();
+        }
+      
+        // Inicia o efeito de digitação ao carregar a página
+        window.onload = function() {
+          typeWriter(text, 'typingContainer', 50); // 50ms entre cada letra
+        }
+      </script>
+      
+</body>
+</html>

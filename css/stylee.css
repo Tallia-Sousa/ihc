@@ -1,0 +1,188 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 1em;
+    background-color: #f0f0f0;
+}
+
+
+
+.typing-container {
+    font-size: 1.2em;
+    white-space: pre-wrap; 
+  }
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+header nav ul li a:hover {
+    text-decoration: underline; 
+}
+
+
+ .modal {
+    display: none; /* Inicialmente escondido */
+    position: fixed; /* Posição fixa na tela */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 1; 
+    overflow: auto; 
+    padding-top: 50px;
+  }
+
+  .modal-content {
+    background-color: #f0f0f0; 
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Largura do modal */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: relative; /* Adicionado para centralizar verticalmente */
+    top: 50%; /* Adicionado para centralizar verticalmente */
+    transform: translateY(-50%); /* Adicionado para centralizar verticalmente */
+  }
+
+  /* ícone */
+  .fa-circle-info {
+  cursor: pointer; /* Mostrar cursor como ponteiro */
+  transition: color 0.3s, transform 0.3s; /* Adiciona transição suave */
+}
+
+/* Efeito hover para o ícone */
+.fa-circle-info:hover {
+  color:  #0056b3; /* Muda a cor no hover */
+  transform: scale(1.2); /* Aumenta o tamanho no hover */
+}
+.close{
+   transition: color 0.3s, transform 0.3s; 
+   font-size: 25px;
+   cursor: pointer; 
+}
+
+.close:hover{
+    color: #007BFF; /* Muda a cor no hover */
+    
+}
+
+
+main {
+    padding: 20px;
+}
+ h4, h5 {
+    font-size: 20px; 
+    text-align: center;
+    font-family: 'Georgia', serif; 
+    color: #333;
+    margin-bottom: 10px;     
+  }
+
+i {
+
+    cursor: pointer;
+    color: #007bff;
+}
+
+ i:hover {
+    color: #0056b3;;
+}
+
+
+/* Estilos para cada livro */
+.book {
+    background-color: #fff; /* Cor de fundo branca */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px; /* Cantos arredondados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.book p {
+     
+    line-height: 1.5; /* Espaçamento entre linhas */
+    color: #666;
+}
+
+/* Estilos para os links dos livros */
+.book a {
+    color: #007bff; /* Cor azul para links */
+    text-decoration: none; /* Remover sublinhado */
+}
+
+.book a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+footer ul li a:hover {
+    color: #ff6f61;
+}
+.Fantasia, .Romance, .Sobre{
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(19, 15, 15, 0.1); /* Sombra suave */
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000; 
+}
+
